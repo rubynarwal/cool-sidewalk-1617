@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #checkmate {
+      width: 25%;
+      height: 120px;
+      margin: auto;
+      margin-top: 8%;
+      background-color: rgb(227, 129, 208);
+      border-radius: 20px;
+    }
+
+    #checkmate>input {
+      margin-top: 50px;
+      margin-left: 4px;
+      height: 20px;
+      width: 100px;
+    }
+
+    #checkmate>label {
+      margin-top: 50px;
+      margin-left: 10%;
+      height: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    input+button {
+      margin-top: 20px;
+      margin-bottom: 4px;
+      margin-left: 5px;
+      background-color: rgb(11, 126, 17);
+    }
+
+    p {
+      margin-top: 20px;
+      text-align: center;
+      color: black;
+      font-size: 18px;
+    }
+
+    #checkmate:hover {
+      background-color: rgb(101, 246, 101);
+      color: rgb(255, 0, 89);
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 0, 89);
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="checkmate">
+    <label>Enter OTP</label>
+    <input type="text" id="promo" placeholder="Enter 4 digit otp..">
+    <button>Submits</button>
+
+  </div>
+</body>
+
+</html>
+<script>
+  document.querySelector("button").addEventListener("click", otpCheck)
+
+  function otpCheck(event) {
+    event.preventDefault()
+    let otp = document.querySelector("#promo").value;
+    if (otp.length == 4) {
+      alert("login Seccessfully😊 you can visit inside ");
+      window.location.href = "index.html";
+    } else {
+      alert("Please enter Valid OTP!");
+    }
+  }
+</script>
