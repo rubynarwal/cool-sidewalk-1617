@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="signup.html">
+    <style>
+        body {
+            background: #E3E6E3;
+        }
+
+        #container {
+            width: 63%;
+            height: 700px;
+            margin: auto;
+            background-color: #fff;
+        }
+
+        .nav {
+            width: 99%;
+            background-color: #009270;
+            padding: 4px 5px;
+        }
+
+        .nav>img {
+            width: 12%;
+            margin-left: 10px;
+        }
+
+        .top {
+            border-bottom: 1px solid #ecebeb;
+            width: 100%;
+            font-size: 15px;
+            padding-top: 10px;
+            font-family: helvetica, "Segoe UI", Arial, sans-serif;
+        }
+
+        .top>p {
+            margin-left: 20px;
+        }
+
+        .top>img {
+            width: 12%;
+            float: right;
+            padding-right: 20px;
+        }
+
+        .login {
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        input {
+            margin-left: 33%;
+            margin-top: 50px;
+            width: 35%;
+            border: 0;
+            border-bottom: 1px solid #555;
+            font-family: helvetica, Segoe UI, Arial, sans-serif;
+        }
+
+        .p {
+            text-align: center;
+            margin-top: 75px;
+            font-size: 13px;
+        }
+
+        .button {
+            margin-left: 33%;
+            margin-top: 40px;
+            width: 34%;
+            padding: 6px 22px;
+            font-size: 15px;
+            padding: 8px 20px;
+            border-radius: 2px;
+            color: #fff;
+            background: #009270;
+            border: 0;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: rgb(233, 227, 112);
+        }
+
+        #container:hover {
+            background-color: rgb(204, 235, 174);
+            color: rgb(255, 0, 89);
+            cursor: pointer;
+        }
+
+        .nav:hover {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 0, 89);
+            cursor: pointer;
+        }
+
+        .login:hover {
+            background-color: rgb(232, 215, 215);
+            color: rgb(255, 0, 89);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="nav">
+            <img src="https://www.cricbuzz.com/images/cb_logo.svg" alt="">
+        </div>
+        <div class="top">
+            <img src="https://www.cricbuzz.com/images/cb_logo_plus_color.svg" alt="">
+            <p><a href="index.html">Home</a><span style="font-weight: bold;">><a href="signup.html">Account</a></span></p>
+        </div>
+        <div class="login">
+            <h2>Login / Sign Up </h2>
+            <p>We will send OTP to your email id</p>
+        </div>
+        <span class="icon">
+            <input id="email" type="email" placeholder=" 📧 Enter your email id">
+            <p class="p"><span>☑️</span>I agree with the <span style="color:blue ;">Terms of Use</span
+                    style="color:blue;"> and
+                <span>Privacy Policy</span> of Cricbuzz
+            </p>
+            <button class="button">Continue</button>
+        </span>
+    </div>
+</body>
+
+</html>
+<script src="./login.js"> </script>
